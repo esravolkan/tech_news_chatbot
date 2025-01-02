@@ -120,10 +120,9 @@ st.markdown("""
 st.write("**Select your sources from the sidebar to get started. 👈**")
 
 
-
 # Sidebar: Welcome and Multiselect for News Sources
 st.sidebar.markdown("# 🤖 Welcome to the Tech News Chatbot!")
-st.sidebar.image("tech.png", caption="TechCrunch News Bot", use_column_width=True)
+st.sidebar.image("tech.png", use_column_width=True)
 
 st.sidebar.info("""
 This is where you can stay updated with the latest news from **TechCrunch**, **Wired**, and **BBC Technology**. 
@@ -134,7 +133,6 @@ I hope this app helps you stay ahead in the fast-moving world of technology. �
 """)
 
 # Multiselect: Allow users to choose news sources
-st.sidebar.markdown("### Select News Sources")
 sources = st.sidebar.multiselect(
     "Choose your sources:",
     ["TechCrunch", "Wired", "BBC Technology"],
